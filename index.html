@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <title>Shopping List</title>
+</head>
+<body>
+
+ <!-- Container/Header -->
+  <section class="container">
+    <div class="appName">
+      <img src="img/shopping-bag.png" alt="shopping bag" class="shopleft">
+      <img src="img/shopping-bag.png" alt="shopping bag" class="shopright">
+      <h2>Shopping List</h2>
+    </div>
+ <!-- Enter Items -->
+    <form id="userInput">
+      <input type="text" id="inputBox" placeholder="Enter item here" size="30">
+      <button type="submit" id="addItem">Enter</button>
+    </form>
+  </section>
+
+  <!-- Sorting -->
+  <section class="sort">
+    <div class="buttonDisplay">
+      <button id="hideButton">Hide Checked Items</button>
+      <button id="showButton">Show Checked Items</button>
+    </div>
+  </section>
+
+  <!-- Shopping List -->
+  <section class="itemsSection">
+    <ul class="itemsList">
+      <li class="item">
+        <div class="box"></div>
+        <span>Milk</span>
+        <img src="img/x01.png" alt="remove" class="remove">
+      </li>
+      <li class="item">
+        <div class="box"></div>
+        <span>Eggs</span>
+        <img src="img/x01.png" alt="remove" class="remove">
+      </li>
+      <li class="item">
+        <div class="box"></div>
+        <span>Tea Bags</span>
+        <img src="img/x01.png" alt="remove" class="remove">
+      </li>
+    </ul>
+  </section>
+
+  <!-- Search Box  -->
+  <section class="search">
+    <form id="searchInput">
+      <input type="text" id="searchBox" placeholder="Search list here" size="30">
+      <button type="submit" id="searchItem">Search</button>
+      <button type="submit" id="resetItem">Reset</button>
+    </form>
+  </section>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
